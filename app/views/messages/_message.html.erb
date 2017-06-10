@@ -1,0 +1,19 @@
+<li>	
+  <div class="row">
+  	<div>
+    	<%= User.find(message.user_id).email %> :
+    </div>
+    <div class="<%= user.id == message.user_id ? 'message-sent' : 'message-received' %>">
+      <%= message.body %>0
+    </div>
+    <div>
+       <br>
+       <br>
+       <br>
+    	<%= message.updated_at %>
+    	<br>
+    	<br>
+    	<br>
+    </div>
+  </div>
+</li>
