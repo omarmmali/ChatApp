@@ -4,6 +4,6 @@ class HomeController < ApplicationController
 	
 	@users = User.all.where.not(id: current_user, signed_in: false)
     
-    @conversations = Conversation.includes(:recipient, :messages).find(session[:conversations])
+   	@conversations = Conversation.includes(:recipient, :messages).find(session[:conversations])
 	end
 end
